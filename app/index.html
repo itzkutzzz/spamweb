@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPAMWEB - URL Window Spammer</title>
+    <link rel="stylesheet" href="https://spamweb.vercel.app/app/cdn/styles.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch" class="theme-switch">
+        <label for="theme-switch" class="theme-switch-label">
+            <span class="theme-icon moon">🌙</span>
+            <span class="theme-icon sun">☀️</span>
+        </label>
+    </div>
+    <div class="container">
+        <h1>SPAMWEB</h1>
+        <div class="form">
+            <input type="url" id="urlInput" placeholder="Enter URL (include https://)" required>
+            <input type="number" id="countInput" placeholder="Number of windows" min="1" max="100" required>
+            <button onclick="spamWindows()">SPAM IT!</button>
+        </div>
+        <div class="warning">
+            <p>⚠️ Make sure to allow pop-ups for this site!</p>
+            <p>Maximum 100 windows allowed</p>
+        </div>
+    </div>
+    <script src="https://spamweb.vercel.app/app/cdn/script.js"></script>
+</body>
+</html>
